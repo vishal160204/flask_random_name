@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # List of batchmates
 batchmates = [
-    "Vishal", "Ananya", "Rahul", "Sneha", "Amit", "Riya", "Sanjay", "Neha", "Kunal", "Priya"
+    "Vishal", "Tushar", "Devendra", "Nikhil", "Vishnu", "Harsh", "Vinay", "Pawan", "Hemant", "Ankit", "Yash","Shreyas","Lokesh", "Kanishk"
 ]
 
 @app.route('/')
