@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Batchmate Picker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pull a Random Name</h1>
+        <button id="pullBtn">Pull Random Name</button>
+        <p id="result">Click the button to pull a name!</p>
+    </div>
+    <script>
+        document.getElementById('pullBtn').addEventListener('click', () => {
+            fetch('/random')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').textContent = data.name;
+                });
+        });
+    </script>
+</body>
+</html>
